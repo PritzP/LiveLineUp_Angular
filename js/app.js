@@ -25,13 +25,15 @@ app.directive('event', function() {
   return {
     restrict: 'A',
     link: function($scope, $element, $attr){
-		var start = $attr.start;
-		var end = $attr.end;
-		if (checkTime(start, end)){
-			$element.addClass('on_now');
-		} else {
-			$element.removeClass('on_now');
-		}
+		setInterval(function() {
+			var start = $attr.start;
+			var end = $attr.end;
+			if (checkTime(start, end)){
+				$element.addClass('on_now');
+			} else {
+				$element.removeClass('on_now');
+			}
+		},1000);
 	}
   }
 });
