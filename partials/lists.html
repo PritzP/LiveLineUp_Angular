@@ -1,4 +1,4 @@
-<div data-ng-repeat="artist in artists" class="artist" data-start="{{artist.start_time}}" data-end="{{artist.end_time}}">
+<div data-ng-repeat="artist in artists" data-event class="artist" data-start="{{artist.start_time}}" data-end="{{artist.end_time}}">
 	<p>{{artist.name}}</p>
 	<p>{{artist.description}}</p>
 	<p data-ng-show="artist.twitter != ''">{{artist.twitter}}</p>

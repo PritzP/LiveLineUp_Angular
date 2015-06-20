@@ -14,21 +14,33 @@ app.controller('ListOfLineUpsController', ['$scope', 'getLiveList', function($sc
 app.directive('artistList', function() {
   return {
     restrict: 'A',
-    templateUrl: '/partials/lists.html',
+    templateUrl: 'partials/lists.html',
     scope: {
       artists: '='
-    },
-    link: function($scope, $element, $attr){
-      console.log($element);
     }
   }
 });
 
+app.directive('event', function() {
+  return {
+    restrict: 'A',
+    link: function($scope, $element, $attr){
+		var start = $attr.start;
+		var end = $attr.end;
+		if (checkTime(start, end)){
+			$element.addClass('on_now');
+		} else {
+			$element.removeClass('on_now');
+		}
+	}
+  }
+});
 
-app.factory("getLiveList", ["$http" ,function ($http) {
+
+app.factory("getLiveList", ["$http", function ($http) {
    return {
      getList: function(){
-        var url = "/public/list.json";
+        var url = "public/list.json";
         var request = $http({
             method: 'GET',
             dataType: "json",
@@ -37,7 +49,10 @@ app.factory("getLiveList", ["$http" ,function ($http) {
         });
          
         return request;
-     }
+     },
+	 setCurrentEvent: function(){
+	
+	 }
   } 
 }]);
 
