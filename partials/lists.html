@@ -1,0 +1,8 @@
+<div data-ng-repeat="artist in artists" class="artist" data-start="{{artist.start_time}}" data-end="{{artist.end_time}}">
+	<p>{{artist.name}}</p>
+	<p>{{artist.description}}</p>
+	<p data-ng-show="artist.twitter != ''">{{artist.twitter}}</p>
+	<p data-ng-show="artist.soundcloud != ''">{{artist.soundcloud}}</p>
+	<p>{{ artist.start_time | dateformatter | date:'fullDate' }}</p>
+	<p>@{{ artist.start_time | dateformatter | date:'shortTime' }}</p>
+</div>
