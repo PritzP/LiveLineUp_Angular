@@ -26,10 +26,14 @@ html,body{
 	  color:#fff;
 	  padding:10px;
 	  margin:0;
-	  border:1px solid #fff;
+	  border-top:1px solid #fff;
+	  border-left:1px solid #fff;
+	  border-right:1px solid #fff;
+	  border-bottom:1px solid #fff;
 	}
 	.liveList{
 		.event{
+			padding:0;
 			* {
 				opacity:0.7;
 			}
@@ -53,16 +57,17 @@ html,body{
 			.date, .time, .endtime {
 				display:inline;
 			}
-			overflow:hidden;
-			padding:0;
 			.content {
 				padding:10px;
 			}
 			&.not_on_now .content{
 				transition: padding 0.50s ease-in;
+				transition: color 0.50s ease-in;
+				transition: background-color 0.50s ease-in;
 			} 
 			&.on_now{
 			  background-color:#2D465B;
+			  transition: background-color 0.50s ease-in;
 			  .content{
 				padding:20px;
 				transition: padding 0.50s ease-in;
@@ -72,7 +77,9 @@ html,body{
 			  }
 			  *{
 				color:#fff;
+				transition: color 0.50s ease-in;
 				opacity:1;
+				transition: opacity 0.50s ease-in;
 			  }
 			}
 		}

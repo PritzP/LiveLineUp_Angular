@@ -28,18 +28,20 @@ html, body {
   color: #fff;
   padding: 10px;
   margin: 0;
-  border: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
-/* line 32, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .ListOfLineUps .liveList .event {
-  overflow: hidden;
   padding: 0;
 }
-/* line 33, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .ListOfLineUps .liveList .event * {
   opacity: 0.7;
 }
-/* line 36, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .ListOfLineUps .liveList .event .on_now_icon {
   display: none;
   font-size: 0.8em;
@@ -50,42 +52,47 @@ html, body {
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
-/* line 46, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .ListOfLineUps .liveList .event h2 {
   font-size: 1.3em;
   color: #0D3E66;
 }
-/* line 50, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .ListOfLineUps .liveList .event .description {
   font-style: italic;
 }
-/* line 53, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .ListOfLineUps .liveList .event .date, .ListOfLineUps .liveList .event .time, .ListOfLineUps .liveList .event .endtime {
   display: inline;
 }
-/* line 58, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .ListOfLineUps .liveList .event .content {
   padding: 10px;
 }
-/* line 61, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .ListOfLineUps .liveList .event.not_on_now .content {
   transition: padding 0.50s ease-in;
+  transition: color 0.50s ease-in;
+  transition: background-color 0.50s ease-in;
 }
-/* line 64, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .ListOfLineUps .liveList .event.on_now {
   background-color: #2D465B;
+  transition: background-color 0.50s ease-in;
 }
-/* line 66, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .ListOfLineUps .liveList .event.on_now .content {
   padding: 20px;
   transition: padding 0.50s ease-in;
 }
-/* line 70, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .ListOfLineUps .liveList .event.on_now .on_now_icon {
   display: inline-block;
 }
-/* line 73, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .ListOfLineUps .liveList .event.on_now * {
   color: #fff;
+  transition: color 0.50s ease-in;
   opacity: 1;
+  transition: opacity 0.50s ease-in;
 }
