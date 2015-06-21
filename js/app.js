@@ -30,8 +30,10 @@ app.directive('event', function() {
 			var end = $attr.end;
 			if (checkTime(start, end)){
 				$element.addClass('on_now');
+				$element.removeClass('not_on_now');
 			} else {
 				$element.removeClass('on_now');
+				$element.addClass('not_on_now');
 			}
 		},1000);
 	}

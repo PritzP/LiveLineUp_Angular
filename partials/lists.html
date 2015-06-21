@@ -1,8 +1,11 @@
-<div data-ng-repeat="artist in artists" data-event class="artist" data-start="{{artist.start_time}}" data-end="{{artist.end_time}}">
-	<p>{{artist.name}}</p>
-	<p>{{artist.description}}</p>
-	<p data-ng-show="artist.twitter != ''">{{artist.twitter}}</p>
-	<p data-ng-show="artist.soundcloud != ''">{{artist.soundcloud}}</p>
-	<p>{{ artist.start_time | dateformatter | date:'fullDate' }}</p>
-	<p>@{{ artist.start_time | dateformatter | date:'shortTime' }}</p>
+<div data-ng-repeat="artist in artists" data-event class="event" data-start="{{artist.start_time}}" data-end="{{artist.end_time}}">
+	<div class="on_now_icon">On Now!</div>
+	<h2>{{artist.name}}</h2>
+	<p class="date">{{ artist.start_time | dateformatter | date:'fullDate' }}</p>
+	<p class="time">@{{ artist.start_time | dateformatter | date:'shortTime' }}</p>
+	<p class="endtime"> till {{ artist.end_time | dateformatter | date:'shortTime' }}</p>
+	<p class="description">{{artist.description}}</p>
+	<p class="twitter" data-ng-show="artist.twitter != ''">{{artist.twitter}}</p>
+	<p class="soundcloud" data-ng-show="artist.soundcloud != ''">{{artist.soundcloud}}</p>
+	<p class="ref" data-ng-show="artist.ref != ''">Reference: {{ artist.ref }}</p>
 </div>

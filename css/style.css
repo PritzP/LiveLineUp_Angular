@@ -1,4 +1,88 @@
-.on_now{
-  background-color:#888;
-  color:#eee;
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 7, ../sass/style.scss */
+html, body {
+  margin: 0;
+  padding: 5px;
+  font-family: Helvetica, Arial;
+  font-size: 12px;
+  background: transparent url(../images/background.jpg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 17, ../sass/style.scss */
+.ListOfLineUps {
+  margin: auto;
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #000;
+}
+/* line 22, ../sass/style.scss */
+.ListOfLineUps h1 {
+  font-size: 2.1em;
+  text-align: center;
+  background-color: #0D3E66;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #fff;
+}
+/* line 32, ../sass/style.scss */
+.ListOfLineUps .liveList .event {
+  padding: 10px;
+  max-height: 0;
+  overflow: hidden;
+}
+/* line 34, ../sass/style.scss */
+.ListOfLineUps .liveList .event * {
+  opacity: 0.7;
+}
+/* line 37, ../sass/style.scss */
+.ListOfLineUps .liveList .event .on_now_icon {
+  display: none;
+  font-size: 0.8em;
+  float: right;
+  background-color: red;
+  padding: 5px;
+  position: relative;
+  left: 10px;
+  top: -10px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+/* line 49, ../sass/style.scss */
+.ListOfLineUps .liveList .event h2 {
+  font-size: 1.3em;
+  color: #0D3E66;
+}
+/* line 53, ../sass/style.scss */
+.ListOfLineUps .liveList .event .description {
+  font-style: italic;
+}
+/* line 56, ../sass/style.scss */
+.ListOfLineUps .liveList .event .date, .ListOfLineUps .liveList .event .time, .ListOfLineUps .liveList .event .endtime {
+  display: inline;
+}
+/* line 61, ../sass/style.scss */
+.ListOfLineUps .liveList .event.not_on_now {
+  max-height: 100px;
+  transition: max-height 0.50s ease-in;
+}
+/* line 65, ../sass/style.scss */
+.ListOfLineUps .liveList .event.on_now {
+  background-color: #2D465B;
+  max-height: 500px;
+  transition: max-height 0.50s ease-in;
+}
+/* line 67, ../sass/style.scss */
+.ListOfLineUps .liveList .event.on_now .on_now_icon {
+  display: inline-block;
+}
+/* line 70, ../sass/style.scss */
+.ListOfLineUps .liveList .event.on_now * {
+  color: #fff;
+  opacity: 1;
 }

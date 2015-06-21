@@ -1,13 +1,18 @@
 <html><head>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+		<link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if IE]>
+		  <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
 </head>
 <body>
 
 
-<div ng-app="insertLiveStream">
+<div ng-app="insertLiveStream" class="ListOfLineUps">
 	<div ng-controller="ListOfLineUpsController">
-
+		<h1>My Events</h1>
 		<div data-ng-cloak="list" class="liveList">
 			<div data-artist-list data-artists="artists" data-dateRange="dateRange"></div>
 		</div>

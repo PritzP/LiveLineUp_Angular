@@ -1,8 +1,17 @@
 [
 	{
 		"ref": "",
-		"start_time": "Sat Jun 20 2015 21:00:00 GMT+0100 (BST)",
-		"end_time": "Sat Jun 20 2015 21:50:00 GMT+0100 (BST)",
+		"start_time": "Sat Jun 21 2015 01:27:00 GMT+0100 (BST)",
+		"end_time": "Sat Jun 21 2015 01:28:00 GMT+0100 (BST)",
+		"name": "My Test",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam turpis, vestibulum nec vulputate egestas, mattis ac odio. Nulla eget nulla sapien. Praesent pretium enim vitae nulla bibendum vehicula.",
+		"twitter": "",
+		"soundcloud": ""
+	},
+	{
+		"ref": "INSERT/012345",
+		"start_time": "Sat Jun 21 2015 01:28:00 GMT+0100 (BST)",
+		"end_time": "Sat Jun 21 2015 01:29:00 GMT+0100 (BST)",
 		"name": "My Test",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam turpis, vestibulum nec vulputate egestas, mattis ac odio. Nulla eget nulla sapien. Praesent pretium enim vitae nulla bibendum vehicula.",
 		"twitter": "",
@@ -10,17 +19,8 @@
 	},
 	{
 		"ref": "",
-		"start_time": "Sat Jun 20 2015 22:00:00 GMT+0100 (BST)",
-		"end_time": "Sat Jun 20 2015 23:30:00 GMT+0100 (BST)",
-		"name": "My Test",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam turpis, vestibulum nec vulputate egestas, mattis ac odio. Nulla eget nulla sapien. Praesent pretium enim vitae nulla bibendum vehicula.",
-		"twitter": "",
-		"soundcloud": ""
-	},
-	{
-		"ref": "",
-		"start_time": "Fri Jun 19 2015 16:00:00 GMT+0100 (BST)",
-		"end_time": "Fri Jun 19 2015 16:30:00 GMT+0100 (BST)",
+		"start_time": "Sat Jun 21 2015 01:29:00 GMT+0100 (BST)",
+		"end_time": "Sat Jun 21 2015 01:30:00 GMT+0100 (BST)",
 		"name": "My Test",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam turpis, vestibulum nec vulputate egestas, mattis ac odio. Nulla eget nulla sapien. Praesent pretium enim vitae nulla bibendum vehicula.",
 		"twitter": "",

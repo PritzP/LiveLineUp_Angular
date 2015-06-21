@@ -1,0 +1,80 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+ 
+html,body{
+	margin:0;
+	padding:5px;
+	font-family:Helvetica, Arial;
+	font-size:12px;
+	background:transparent url(../images/background.jpg);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+.ListOfLineUps{
+	margin:auto;
+	max-width:400px;
+	background-color:#fff;
+	box-shadow: 0 0 10px #000;
+	h1{
+	  font-size:2.1em;
+	  text-align:center;
+	  background-color:#0D3E66;
+	  color:#fff;
+	  padding:10px;
+	  margin:0;
+	  border:1px solid #fff;
+	}
+	.liveList{
+		.event{
+			padding:10px;
+			* {
+				opacity:0.7;
+			}
+			.on_now_icon{
+				display: none;
+				font-size:0.8em;
+				float: right;
+				background-color: red;
+				padding: 5px;
+				position: relative;
+				left: 10px;
+				top: -10px;
+				border-left:1px solid #fff;
+				border-bottom:1px solid #fff;
+			}
+			h2 {
+				font-size:1.3em;
+				color:#0D3E66;
+			}
+			.description {
+				font-style:italic;
+			}
+			.date, .time, .endtime {
+				display:inline;
+			}
+			max-height:0;
+			overflow:hidden;
+			&.not_on_now{
+				max-height:100px;
+				transition: max-height 0.50s ease-in;
+			}
+			&.on_now{
+			  background-color:#2D465B;
+			  .on_now_icon{
+				display: inline-block;
+			  }
+			  *{
+				color:#fff;
+				opacity:1;
+			  }
+			    max-height: 500px;
+				transition: max-height 0.50s ease-in;
+			}
+		}
+	}
+}
+
